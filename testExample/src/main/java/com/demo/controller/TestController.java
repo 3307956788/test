@@ -20,4 +20,9 @@ public class TestController {
     public String say(){
         return "说一些莫名其妙的话,让人无法理解";
     }
+    
+    @RequestMapping("/sing")
+    public String sing(){
+        return "你唱的真够难听的";
+    }
 }
