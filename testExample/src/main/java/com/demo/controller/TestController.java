@@ -1,5 +1,6 @@
 package com.demo.controller;
 
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -24,5 +25,11 @@ public class TestController {
     @RequestMapping("/sing")
     public String sing(){
         return "你唱的真够难听的，球球你了不要在唱了";
+    }
+
+    @RequestMapping("/get/{name}")
+    public String get(@PathVariable String name){
+        System.out.println("获得传入的参数是："+name);
+        return "输入的参数是："+name;
     }
 }
