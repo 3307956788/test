@@ -15,7 +15,7 @@ public class TestController {
         System.out.println("获得的随机数为："+i);
         return "返回随机数："+i;
     }
-
+    
     @RequestMapping("/say")
     public String say(){
         return "说一些莫名其妙的话,让人无法理解";
